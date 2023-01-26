@@ -26,4 +26,23 @@ Boolean
 
 Character Type
 - Languages more primitive alphabetic type
-- 
+
+Tuples
+- Comma separated values inside parentheses
+- Types can be different
+- Can use destructing to get individual values out of a tuple
+```rust
+let tup = (500, 6.4, 1);
+
+let (x, y, z) = tup;
+```
+- Also can access members by using `.` followed by the index value
+```rust
+let x: (i32, f64, u8) = (500, 6.4, 1);
+
+let five_hundred = x.0;
+
+let six_point_four = x.1;
+
+let one = x.2;
+```
